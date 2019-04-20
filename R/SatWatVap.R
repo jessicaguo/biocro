@@ -6,7 +6,6 @@
 ## http://cires.colorado.edu/~voemel/vp.html
 
 
-#' @export
 fnpsvp <- function(Tkelvin){
 #   water boiling point = 373.16 oK
 
@@ -24,7 +23,6 @@ fnpsvp <- function(Tkelvin){
 
 ## Arden Buck Equation
 
-#' @export
 ardBuck <- function(Tcelsius){
 
   a <- (18.678 - Tcelsius/234.5)*Tcelsius

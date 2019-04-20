@@ -531,7 +531,6 @@ ialr <- function(lprops){
 
 ## This is the S3 method for printing
 
-#' @export
 print.OpBioGro <- function(x,...){
 
   cat("\n Optimization for stage:",x$phen,"\n")
@@ -558,7 +557,7 @@ print.OpBioGro <- function(x,...){
 }
 
 
-#' @export
+
 summary.OpBioGro <- function(object,...){
 
   cfs <- object$coefs

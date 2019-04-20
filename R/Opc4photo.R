@@ -494,6 +494,7 @@ RsqC4photo <- function(data, vmax=39,alph=0.04,
 ## Display methods for Opc4photo and OpEC4photo
 ##' Display methods for Opc4photo and OpEC4photo
 ##' @export
+##' @S3method print Opc4photo
 print.Opc4photo <- function(x,digits=2,...){
 
   opl <- x$op.level
@@ -578,6 +579,7 @@ print.Opc4photo <- function(x,digits=2,...){
 ## Predict method
 ##' Predict method
 ##' @export
+##' @S3method predict Opc4photo
 predict.Opc4photo <- function(object, newdata,...){
 
   x <- object
@@ -669,6 +671,7 @@ predict.Opc4photo <- function(object, newdata,...){
 ##' This function will implement simple calculations
 ##' of predicted and residuals for the Opc4photo function
 ##' @export
+##' @S3method summary Opc4photo
 ##' 
 summary.Opc4photo <- function(object,...){
 
@@ -709,6 +712,7 @@ summary.Opc4photo <- function(object,...){
        sigma=sigma),class="summary.Opc4photo")
 }
 ##' @export
+##' @S3method print summary.Opc4photo
 print.summary.Opc4photo <- function(x,...){
 
   cat("\n Diagnostic measures\n")
@@ -720,6 +724,7 @@ print.summary.Opc4photo <- function(x,...){
   cat("\n BIC:",x$BIC,"\n")
 }
 ##' @export
+##' @S3method plot Opc4photo
 plot.Opc4photo <- function(x,plot.kind=c("RvsF","OandF","OvsF"),resid=c("std","raw"),...){
 
   dat <- x$data
@@ -1109,6 +1114,7 @@ mOpc4photo <- function(data,ID=NULL,
 ## Printing method
 ##' Printing method
 ##' @export
+##' @S3method print mOpc4photo
 print.mOpc4photo <- function(x,...){
 
   ncolm <- ncol(unclass(x)$mat)
@@ -1177,6 +1183,7 @@ print.mOpc4photo <- function(x,...){
 ## Plotting method
 ##' Plotting method
 ##' @export
+##' @S3method plot mOpc4photo
 plot.mOpc4photo <- function(x, parm = c("vmax","alpha"), ...){
 
   parm <- match.arg(parm)

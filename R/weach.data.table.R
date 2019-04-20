@@ -1,5 +1,3 @@
-.datatable.aware = NULL  # Needed for the ridiculous way that the data.table package works.
-
 ##' Simple, Fast Daily to Hourly Climate Downscaling
 ##'
 ##' Based on weach family of functions but 5x faster than weachNEW,
@@ -11,7 +9,9 @@
 ##' @export
 ##' @return weather file for input to BioGro and related crop growth functions
 ##' @author David LeBauer
-##'
+
+.datatable.aware = NULL  # Needed for the ridiculous way that the data.table package works.
+
 weach.data.table <- function(X, ...) {
 	lati = list(...)$lati
 	if (!requireNamespace('data.table')) stop('in weach.data.table: this function requires the data.tables package')

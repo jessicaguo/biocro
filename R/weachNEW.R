@@ -1,4 +1,3 @@
-#' @export
 weachNEW<- function(X,lati,ts=1,temp.units=c("Farenheit","Celsius"),rh.units=c("percent","fraction"),ws.units=c("mph","mps"),pp.units=c("in","mm"),...)
 {
 

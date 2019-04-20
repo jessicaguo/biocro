@@ -1,13 +1,4 @@
 
-#' BioCro
-#'
-#' Description of the package goes here
-#'
-#' @name BioCro
-#' @import stats lattice
-#' @useDynLib BioCro MisGro
-#'
-NULL
 
 ##' A/Ci curves
 ##'
